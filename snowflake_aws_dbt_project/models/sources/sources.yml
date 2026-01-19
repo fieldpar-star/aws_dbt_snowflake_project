@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: staging
+    database: "{{ target.database }}"
+    schema: "{{ target.schema }}"
+    tables:
+      - name: raw_bookings
+      - name: raw_listings
+      - name: raw_hosts

@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: bronze_hosts
+    description: "Bronze layer for hosts"
+    columns:
+      - name: host_id
+        description: "Primary key for hosts"
+        tests:
+          - not_null
+          - unique
+    config:
+      materialized: table          
+
+  - name: bronze_listings
+    description: "Bronze layer for listings"
+    columns:
+      - name: listing_id
+        description: "Primary key for listings"
+        tests:
+          - not_null
+          - unique
+    config:
+      materialized: table
+
+  - name: bronze_bookings
+    description: "Bronze layer for bookings"
+    columns:
+      - name: booking_id
+        description: "Primary key for bookings"
+        tests:
+          - not_null
+          - unique
+    config:
+      materialized: table          
+  
