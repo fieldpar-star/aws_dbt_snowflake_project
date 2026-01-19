@@ -1,13 +1,13 @@
 snowflake_aws_dbt_project:
+  target: dev
   outputs:
     dev:
-      account: GJWAYML-ET79855
-      database: DBT_LEARN
-      password: scZ7pvnXy5tDh5w
-      role: ACCOUNTADMIN
-      schema: dbt_dev
-      threads: 4
       type: snowflake
-      user: BloomsTech
-      warehouse: COMPUTE_WH
-  target: dev
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      user: "{{ env_var('SNOWFLAKE_USER') }}"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+      role: "{{ env_var('SNOWFLAKE_ROLE') }}"
+      warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE') }}"
+      database: "{{ env_var('SNOWFLAKE_DATABASE') }}"
+      schema: "{{ env_var('SNOWFLAKE_SCHEMA') }}"
+      threads: 4
