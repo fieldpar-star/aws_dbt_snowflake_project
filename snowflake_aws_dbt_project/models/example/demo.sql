@@ -1,2 +1,2 @@
 
-SELECT * FROM raw_bookings LIMIT 10
+SELECT * FROM raw_bookings LIMIT 5
