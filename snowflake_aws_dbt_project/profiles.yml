@@ -1,0 +1,13 @@
+snowflake_aws_dbt_project:
+  outputs:
+    dev:
+      account: GJWAYML-ET79855
+      database: DBT_LEARN
+      password: scZ7pvnXy5tDh5w
+      role: ACCOUNTADMIN
+      schema: dbt_dev
+      threads: 4
+      type: snowflake
+      user: BloomsTech
+      warehouse: COMPUTE_WH
+  target: dev
