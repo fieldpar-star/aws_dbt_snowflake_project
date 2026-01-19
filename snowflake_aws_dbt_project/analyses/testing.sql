@@ -1,0 +1,1 @@
+SELECT * from silver.silver_hosts
