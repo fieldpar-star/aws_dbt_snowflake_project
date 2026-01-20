@@ -20,3 +20,6 @@
           "join_condition": "silver_listings.HOST_ID = silver_hosts.HOST_ID"                                          
       }                                                                                                               
   ] %}   
+
+  select 
+    {% for config%}

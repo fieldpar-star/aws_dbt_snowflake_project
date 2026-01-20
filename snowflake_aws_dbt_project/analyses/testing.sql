@@ -1,1 +1,1 @@
-SELECT * from silver.silver_hosts
+ SELECT * FROM silver.silver_hosts 
