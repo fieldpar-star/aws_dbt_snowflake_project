@@ -1,0 +1,10 @@
+{
+    "dbt.enableNewLineagePanel": true,
+    "dbt.projectPath": "./snowflake_aws_dbt_project",
+    "python.defaultInterpreterPath": "/Users/bloomsfieldparbey/Documents/aws_dbt_snowflake_project/snowflake_aws_dbt_project/.venv/bin/python",
+    "python.pythonPath": "/Users/bloomsfieldparbey/Documents/aws_dbt_snowflake_project/snowflake_aws_dbt_project/.venv/bin/python",
+    "dbt.dbtPythonPathOverride": "/Users/bloomsfieldparbey/Documents/aws_dbt_snowflake_project/snowflake_aws_dbt_project/.venv/bin/python",
+    "files.associations": {
+        "*.sql": "jinja-sql"
+    }
+}
